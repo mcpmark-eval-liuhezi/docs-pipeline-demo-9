@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+    branches: [main, chore/*]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello from the docs-pipeline demo CI workflow!"
